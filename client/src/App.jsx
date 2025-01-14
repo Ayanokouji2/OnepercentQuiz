@@ -5,64 +5,82 @@ import { toast } from 'sonner';
 function App() {
 	const [data, setData] = useState([]);
 	const [index, setIndex] = useState(0);
+	const [correctAnswerCount, setCorrectAnsCount] = useState(0);
 
-	const handlePrevClick = () => {
-		if(index === 0){
-			toast.error("This is the First Question")
-			return;
+	const handleSelect = (ans, id) => {
+		setCorrectAnsCount((prev) => {
+			return data.find((item) => item.id === id).correctAnswer === ans ? prev + 1 : prev;
+		});
+
+		if (id === data.length) {
+			toast.success(`You got ${correctAnswerCount} correct answers!`);
 		}
-		setIndex((prev) => {
-			return prev === 0 ? prev : prev - 1;
-		})
-	}
+
+		setIndex((prev) => prev + 1);
+	};
+
 	useEffect(() => {
 		setData(Data.questions);
 	}, []);
-	return (
-		<>
-			<div className='h-screen w-full bg-gray-100 '>
-				<div className='text-2xl text-center p-3 font-semibold'>
-					<h1 className='tracking-wide'>
-						Becoming{' '}
-						<span className='text-red-500 font-extrabold font-mono'>
-							One
-						</span>
-						Percent
+
+	if (index === data.length) {
+		return (
+			<div className="min-h-screen bg-gradient-to-br from-indigo-100 to-purple-200 flex items-center justify-center p-4 sm:p-5">
+				<div className="w-full max-w-lg p-6 sm:p-8 shadow-lg rounded-2xl bg-white/80 backdrop-blur-lg text-center">
+					<h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-wider mb-8">
+						Quiz Complete!
 					</h1>
-				</div>
-
-				<div className='p-3 text-xl mt-7 font-semibold bg-slate-100'>
-					<h2 className='text-2xl text-center'>{data[index]?.question}</h2>
-
-					<div className='flex flex-col gap-5 mt-7 px-4'>
-						{data[index]?.options.map((option, index) => (
-							<p
-								key={index + option.slice(0, 5)}
-								className='shadow-md hover:shadow-lg hover:bg-purple-300/50 p-2 border rounded-lg border-black'>
-								{option}
-							</p>
-						))}
+					<p className="text-lg sm:text-xl font-semibold text-gray-600 mb-6">
+						You answered <span className="text-green-600 font-bold">{correctAnswerCount}</span> correctly out of <span className="font-bold">{data.length}</span> questions.
+					</p>
+					<div className="bg-gradient-to-r from-green-200 via-blue-200 to-purple-300 p-5 rounded-lg shadow">
+						<h2 className="text-2xl font-bold mb-4">Your Performance</h2>
+						<p className="text-base text-gray-700">
+							{correctAnswerCount / data.length >= 0.8
+								? 'Excellent! You did a great job!'
+								: correctAnswerCount / data.length >= 0.5
+								? 'Good effort! Keep practicing to improve!'
+								: 'Keep trying! Review the questions and come back stronger!'}
+						</p>
 					</div>
-
-					<div className='flex justify-between p-11'>
-						<button
-							className='bg-sky-400 py-2 px-4 rounded-lg border border-black'
-							onClick={() =>handlePrevClick()}>
-							Prev
-						</button>
-						<button className='bg-emerald-300 py-2 px-4 rounded-lg border border-black'
-							onClick={()=>{
-								setIndex(prev=>{
-									return prev === data.length - 1 ? prev : prev + 1 
-								})
-							}}
-						>
-							Next
-						</button>
-					</div>
+					<button
+						onClick={() => window.location.reload()}
+						className="mt-8 px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg shadow-md hover:bg-indigo-600 transition-all">
+						Try Again
+					</button>
 				</div>
 			</div>
-		</>
+		);
+	}
+
+	return (
+		<div className="min-h-screen bg-gradient-to-br from-indigo-100 to-purple-200 flex items-center justify-center p-4 sm:p-5">
+			<div className="w-full max-w-lg p-6 sm:p-8 shadow-lg rounded-2xl bg-white/80 backdrop-blur-lg">
+				<h1 className="text-3xl sm:text-4xl text-center font-extrabold text-gray-800 tracking-wider mb-6 sm:mb-10">
+					Becoming
+					<span className="text-red-500"> One </span>
+					Percent
+				</h1>
+				<div className="bg-white shadow-md p-5 sm:p-6 rounded-xl">
+					<h2 className="text-xl sm:text-2xl font-semibold text-gray-700 text-center mb-4 sm:mb-6">
+						{data[index]?.question}
+					</h2>
+					<div className="flex flex-col gap-3 sm:gap-4">
+						{data[index]?.options.map((option, currentIndex) => (
+							<button
+								onClick={() => handleSelect(option, data[index]?.id)}
+								key={currentIndex + option.slice(0, 5)}
+								className="w-full text-left p-3 sm:p-4 text-base sm:text-lg font-medium bg-gradient-to-r from-purple-50 to-purple-100 hover:bg-purple-200 rounded-lg border border-gray-300 shadow-sm hover:shadow-md transition-all">
+								{option}
+							</button>
+						))}
+					</div>
+				</div>
+				<div className="text-center mt-6 sm:mt-8">
+					<p className="text-xs sm:text-sm text-gray-500 italic">Keep going, you are doing great!</p>
+				</div>
+			</div>
+		</div>
 	);
 }
 
