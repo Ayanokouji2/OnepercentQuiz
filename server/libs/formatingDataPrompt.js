@@ -1,0 +1,1 @@
+const formatingPrompt = `Format the data and just give me `

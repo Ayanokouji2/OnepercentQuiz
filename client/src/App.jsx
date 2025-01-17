@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Data from './constant/data.json';
-import { prompt } from './constant/prompt';
-import model from './util/Gemini';
+// import { prompt } from './constant/prompt';
+// import model from './util/Gemini';
 
 function App() {
 	const [data, setData] = useState([]);
@@ -14,6 +14,7 @@ function App() {
 	// 	.catch((err) => console.error(err));
 
 	const handleSelect = (ans, id) => {
+		console.log(data.find(item => item.id === id	))
 		setCorrectAnsCount((prev) => {
 			return data.find((item) => item.id === id).correctAnswer === ans
 				? prev + 1
