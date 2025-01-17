@@ -1,0 +1,185 @@
+
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the time complexity of searching for an element in a sorted array using binary search?",     
+      "options": ["O(n)", "O(log n)", "O(n^2)", "O(1)"],
+      "correctAnswer": "O(log n)"
+    },
+    {
+      "id": 2,
+      "question": "Which data structure uses the LIFO (Last-In, First-Out) principle?",
+      "options": ["Queue", "Stack", "Linked List", "Heap"],
+      "correctAnswer": "Stack"
+    },
+    {
+      "id": 3,
+      "question": "What is the average time complexity of inserting an element into a binary search tree?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+      "correctAnswer": "O(log n)"
+    },
+    {
+      "id": 4,
+      "question": "Which algorithm is best suited for finding the shortest path in a graph with non-negative edge weights?",
+      "options": ["Bellman-Ford", "Dijkstra's", "Floyd-Warshall", "Prim's"],
+      "correctAnswer": "Dijkstra's"
+    },
+    {
+      "id": 5,
+      "question": "What is the space complexity of merge sort?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+      "correctAnswer": "O(n)"
+    },
+    {
+      "id": 6,
+      "question": "Which data structure is best for implementing a priority queue?",
+      "options": ["Linked List", "Array", "Binary Heap", "Stack"],
+      "correctAnswer": "Binary Heap"
+    },
+    {
+      "id": 7,
+      "question": "What is the time complexity of deleting an element from a hash table with separate chaining?",       
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+      "correctAnswer": "O(1)"
+    },
+    {
+      "id": 8,
+      "question": "What does BFS stand for in graph traversal?",
+      "options": ["Breadth-First Search", "Best-First Search", "Binary-First Search", "Branch-First Search"],
+      "correctAnswer": "Breadth-First Search"
+    },
+    {
+      "id": 9,
+      "question": "Which sorting algorithm has a worst-case time complexity of O(n^2)?",
+      "options": ["Merge Sort", "Quick Sort", "Heap Sort", "Bubble Sort"],
+      "correctAnswer": "Bubble Sort"
+    },
+    {
+      "id": 10,
+      "question": "What is a deadlock in operating systems and concurrent programming?",
+      "options": ["A situation where two or more processes are blocked indefinitely, waiting for each other.", "A situation where a process is waiting for an event that will never occur.", "A situation where a process is using too much memory.", "A situation where a process is running too slowly."],
+      "correctAnswer": "A situation where two or more processes are blocked indefinitely, waiting for each other."      
+    },
+    {
+      "id": 11,
+      "question": "What is the purpose of a Trie data structure?",
+      "options": ["Efficiently storing and retrieving strings.", "Implementing a priority queue.", "Sorting numbers efficiently.", "Graph traversal."],
+      "correctAnswer": "Efficiently storing and retrieving strings."
+    },
+    {
+      "id": 12,
+      "question": "What is the time complexity of finding the minimum element in a min-heap?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+      "correctAnswer": "O(1)"
+    },
+    {
+      "id": 13,
+      "question": "What is dynamic programming?",
+      "options": ["A technique for solving problems by breaking them down into smaller overlapping subproblems and solving each subproblem only once.", "A technique for solving problems using recursion only.", "A technique for solving problems using iteration only.", "A technique for solving problems using brute force."],
+      "correctAnswer": "A technique for solving problems by breaking them down into smaller overlapping subproblems and solving each subproblem only once."
+    },
+    {
+      "id": 14,
+      "question": "What is the difference between a stack and a queue?",
+      "options": ["Stack uses LIFO, Queue uses FIFO.", "Stack uses FIFO, Queue uses LIFO.", "Both use LIFO.", "Both use FIFO."],
+      "correctAnswer": "Stack uses LIFO, Queue uses FIFO."
+    },
+    {
+      "id": 15,
+      "question": "What is the best-case time complexity of QuickSort?",
+      "options": ["O(n^2)", "O(n log n)", "O(n)", "O(log n)"],
+      "correctAnswer": "O(n log n)"
+    },
+    {
+      "id": 16,
+      "question": "Which data structure is best suited for representing a hierarchical relationship?",
+      "options": ["Array", "Linked List", "Tree", "Graph"],
+      "correctAnswer": "Tree"
+    },
+    {
+      "id": 17,
+      "question": "What is a graph?",
+      "options": ["A data structure consisting of nodes and edges.", "A linear data structure.", "A type of sorting algorithm.", "A way to represent a tree."],
+      "correctAnswer": "A data structure consisting of nodes and edges."
+    },
+    {
+      "id": 18,
+      "question": "What is the time complexity of inserting an element at the beginning of a singly linked list?",      
+      "options": ["O(n)", "O(1)", "O(log n)", "O(n^2)"],
+      "correctAnswer": "O(1)"
+    },
+    {
+      "id": 19,
+      "question": "What is a hash collision?",
+      "options": ["When two different keys map to the same index in a hash table.", "When a key is not found in a hash table.", "When a hash table is full.", "When a hash table is empty."],
+      "correctAnswer": "When two different keys map to the same index in a hash table."
+    },
+    {
+      "id": 20,
+      "question": "What is the space complexity of a recursive function that performs a depth-first search on a binary tree?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+      "correctAnswer": "O(n)"
+    },
+    {
+      "id": 21,
+      "question": "What is the difference between a complete binary tree and a full binary tree?",
+      "options": ["A complete binary tree has all levels filled except possibly the last, while a full binary tree has every node with either zero or two children.", "A full binary tree has all levels filled except possibly the last, while a complete binary tree has every node with either zero or two children.", "They are the same.", "Neither has any specific requirements."],
+      "correctAnswer": "A complete binary tree has all levels filled except possibly the last, while a full binary tree has every node with either zero or two children."
+    },
+    {
+      "id": 22,
+      "question": "What is amortized analysis in algorithm analysis?",
+      "options": ["Averaging the time complexity over a sequence of operations.", "Analyzing the worst-case time complexity.", "Analyzing the best-case time complexity.", "Analyzing the average-case time complexity."],
+      "correctAnswer": "Averaging the time complexity over a sequence of operations."
+    },
+    {
+      "id": 23,
+      "question": "What algorithm is used to detect cycles in a graph?",
+      "options": ["Dijkstra's Algorithm", "Breadth-First Search (BFS)", "Depth-First Search (DFS)", "Prim's Algorithm"],
+      "correctAnswer": "Depth-First Search (DFS)"
+    },
+    {
+      "id": 24,
+      "question": "What is a self-balancing binary search tree?",
+      "options": ["A binary search tree that automatically maintains balance to ensure efficient search, insertion, and deletion.", "A binary search tree that is always perfectly balanced.", "A binary search tree that allows duplicate keys.", "A binary search tree that does not allow duplicate keys."],
+      "correctAnswer": "A binary search tree that automatically maintains balance to ensure efficient search, insertion, and deletion."
+    },
+    {
+      "id": 25,
+      "question": "What is topological sorting?",
+      "options": ["A linear ordering of nodes in a directed acyclic graph (DAG) such that for every directed edge from node A to node B, node A appears before node B in the ordering.", "Sorting nodes in a graph by their degree.", "Sorting edges in a graph by their weight.", "A method for finding the shortest path in a graph."],
+      "correctAnswer": "A linear ordering of nodes in a directed acyclic graph (DAG) such that for every directed edge from node A to node B, node A appears before node B in the ordering."
+    },
+    {
+      "id": 26,
+      "question": "What is the purpose of a heap data structure?",
+      "options": ["Efficiently finding the minimum or maximum element.", "Efficiently storing and retrieving strings.", "Implementing a queue.", "Sorting numbers efficiently."],
+      "correctAnswer": "Efficiently finding the minimum or maximum element."
+    },
+    {
+      "id": 27,
+      "question": "What is the time complexity of finding the kth smallest element in an unsorted array using a min-heap?",
+      "options": ["O(n)", "O(k log n)", "O(n log k)", "O(n log n)"],
+      "correctAnswer": "O(n + k log n)"
+    },
+    {
+      "id": 28,
+      "question": "What is the difference between Big O, Big Omega, and Big Theta notation?",
+      "options": ["They represent upper bound, lower bound, and tight bound respectively on the growth of an algorithm's runtime.", "They represent lower bound, upper bound, and tight bound respectively on the growth of an algorithm's runtime.", "They all represent the upper bound on the growth of an algorithm's runtime.", "They are all the same."],
+      "correctAnswer": "They represent upper bound, lower bound, and tight bound respectively on the growth of an algorithm's runtime."
+    },
+    {
+      "id": 29,
+      "question": "What is a doubly linked list?",
+      "options": ["A linked list where each node points to both the next and previous node.", "A linked list where each node points only to the next node.", "A linked list where each node points only to the previous node.", "A circular linked list."],
+      "correctAnswer": "A linked list where each node points to both the next and previous node."
+    },
+    {
+      "id": 30,
+      "question": "What is a red-black tree?",
+      "options": ["A self-balancing binary search tree that maintains a specific set of properties to ensure efficient search, insertion, and deletion.", "A binary search tree that is always perfectly balanced.", "A type of hash table.", "A type of gra type of graph."],
+      "correctAnswer": "A self-balancing binary search tree that maintains a specific set of properties to ensure efficient search, insertion, and deletion."
+    }
+  ]
+}
