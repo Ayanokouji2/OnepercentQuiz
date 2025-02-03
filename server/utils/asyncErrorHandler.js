@@ -1,4 +1,4 @@
-import CustomError from './customError.js';
+
 
 /**
  * Higher-order function to handle async errors in Express route handlers
@@ -9,12 +9,12 @@ const asyncErrorHandler = (fn) => {
 	return (req, res, next) => {
 		Promise.resolve(fn(req, res, next))
 			.catch((error) => {
+				// If error has a status code, use it, otherwise default to 500
 				const statusCode = error.statusCode || 500;
-				const status = error.status || 'error';
 				
 				// Send error response
-				res.status(statusCode).json({
-					status,
+				return res.status(statusCode).json({
+					statusCode,
 					success: false,
 					message: error.message || 'Internal Server Error',
 					error: {

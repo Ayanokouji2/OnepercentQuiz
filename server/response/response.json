@@ -3,333 +3,333 @@
   "questions": [
     {
       "id": 1,
-      "question": "Which physiographic region dominates the northern part of Jharkhand?",
+      "question": "What is the primary function of a database management system (DBMS)?",
       "options": [
-        "Chotanagpur Plateau",
-        "Ganga Plains",
-        "North Bihar Plain",
-        "Damodar Valley"
+        "To store and retrieve data efficiently",
+        "To create user interfaces for applications",
+        "To manage network security",
+        "To develop software applications"
       ],
-      "correctAnswer": "Chotanagpur Plateau"
+      "correctAnswer": "To store and retrieve data efficiently"
     },
     {
       "id": 2,
-      "question": "The Damodar River is primarily known for its role in which sector of Jharkhand's economy?",
+      "question": "Which data structure uses a Last-In, First-Out (LIFO) approach?",
       "options": [
-        "Tourism",
-        "Agriculture",
-        "Power Generation",
-        "Fisheries"
+        "Queue",
+        "Stack",
+        "Linked List",
+        "Tree"
       ],
-      "correctAnswer": "Power Generation"
+      "correctAnswer": "Stack"
     },
     {
       "id": 3,
-      "question": "Which major river flows through Ranchi?",
+      "question": "What does SQL stand for?",
       "options": [
-        "Subarnarekha",
-        "Damodar",
-        "Brahmani",
-        "Kanchi"
+        "Structured Query Language",
+        "Statistical Query Language",
+        "Simple Query Language",
+        "Sequential Query Language"
       ],
-      "correctAnswer": "Subarnarekha"
+      "correctAnswer": "Structured Query Language"
     },
     {
       "id": 4,
-      "question": "What is the dominant type of soil found in the Chotanagpur Plateau?",
+      "question": "What is the purpose of normalization in database design?",
       "options": [
-        "Black Soil",
-        "Red and Yellow Soil",
-        "Laterite Soil",
-        "Alluvial Soil"
+        "To improve data redundancy",
+        "To reduce data redundancy and improve data integrity",
+        "To speed up data retrieval",
+        "To simplify database administration"
       ],
-      "correctAnswer": "Red and Yellow Soil"
+      "correctAnswer": "To reduce data redundancy and improve data integrity"
     },
     {
       "id": 5,
-      "question": "Jharkhand's mineral resources are primarily concentrated in which region?",
+      "question": "What is a primary key in a relational database?",
       "options": [
-        "Northern Plains",
-        "Ganga Valley",
-        "Chotanagpur Plateau",
-        "Santhal Parganas"
+        "A unique identifier for each record",
+        "A field that contains foreign keys",
+        "A field that can contain null values",
+        "A field that indexes the table"
       ],
-      "correctAnswer": "Chotanagpur Plateau"
+      "correctAnswer": "A unique identifier for each record"
     },
     {
       "id": 6,
-      "question": "Which mineral is Jharkhand the largest producer of in India?",
+      "question": "What is an ACID transaction?",
       "options": [
-        "Iron Ore",
-        "Coal",
-        "Bauxite",
-        "Copper"
+        "Atomicity, Consistency, Isolation, Durability",
+        "Accuracy, Completeness, Integrity, Dependability",
+        "Availability, Confidentiality, Integrity, Durability",
+        "Atomicity, Capacity, Integrity, Dependability"
       ],
-      "correctAnswer": "Coal"
+      "correctAnswer": "Atomicity, Consistency, Isolation, Durability"
     },
     {
       "id": 7,
-      "question": "Which type of forest is most prevalent in Jharkhand?",
+      "question": "Which algorithm is commonly used for searching in a sorted array?",
       "options": [
-        "Tropical Rainforest",
-        "Tropical Deciduous Forest",
-        "Coniferous Forest",
-        "Mangrove Forest"
+        "Bubble Sort",
+        "Linear Search",
+        "Binary Search",
+        "Merge Sort"
       ],
-      "correctAnswer": "Tropical Deciduous Forest"
+      "correctAnswer": "Binary Search"
     },
     {
       "id": 8,
-      "question": "The highest peak in Jharkhand is:",
+      "question": "What is polymorphism in object-oriented programming?",
       "options": [
-        "Parasnath",
-        "Meru",
-        "Guru Shikhar",
-        "Kailas"
+        "The ability to inherit properties from a parent class",
+        "The ability of an object to take on many forms",
+        "The ability to encapsulate data and methods",
+        "The ability to abstract away complex implementation details"
       ],
-      "correctAnswer": "Parasnath"
+      "correctAnswer": "The ability of an object to take on many forms"
     },
     {
       "id": 9,
-      "question": "Which of these is a major tribal group in Jharkhand?",
+      "question": "What is the difference between a class and an object?",
       "options": [
-        "Santhal",
-        "Bhil",
-        "Gond",
-        "Oraon"
+        "A class is a blueprint, an object is an instance of a class",
+        "A class is an instance, an object is a blueprint",
+        "There is no difference",
+        "A class is a method, an object is a variable"
       ],
-      "correctAnswer": "Santhal"
+      "correctAnswer": "A class is a blueprint, an object is an instance of a class"
     },
     {
       "id": 10,
-      "question": "Which dam is located on the Subarnarekha River in Jharkhand?",
+      "question": "What is encapsulation in object-oriented programming?",
       "options": [
-        "Maithon Dam",
-        "Tenughat Dam",
-        "Panchet Dam",
-        "Chandil Dam"
+        "Hiding internal details of an object",
+        "Inheriting properties from a parent class",
+        "Creating multiple methods with the same name",
+        "Overloading operators"
       ],
-      "correctAnswer": "Chandil Dam"
+      "correctAnswer": "Hiding internal details of an object"
     },
     {
       "id": 11,
-      "question": "What is the major climatic characteristic of Jharkhand?",
+      "question": "What is inheritance in object-oriented programming?",
       "options": [
-        "Tropical Wet and Dry",
-        "Temperate",
-        "Polar",
-        "Mediterranean"
+        "Creating new classes from existing classes",
+        "Hiding internal data from external access",
+        "Overriding methods from parent classes",
+        "Polymorphic behavior of objects"
       ],
-      "correctAnswer": "Tropical Wet and Dry"
+      "correctAnswer": "Creating new classes from existing classes"
     },
     {
       "id": 12,
-      "question": "The 'Ponds of Ranchi' are primarily associated with which aspect?",
+      "question": "What is the purpose of a version control system (VCS)?",
       "options": [
-        "Agriculture",
-        "Tourism",
-        "Water Conservation",
-        "Industrial Use"
+        "To manage source code and track changes",
+        "To compile code into executable files",
+        "To debug code and identify errors",
+        "To design user interfaces for applications"
       ],
-      "correctAnswer": "Water Conservation"
+      "correctAnswer": "To manage source code and track changes"
     },
     {
       "id": 13,
-      "question": "Which city serves as the capital of Jharkhand?",
+      "question": "Which of the following is NOT a common VCS?",
       "options": [
-        "Ranchi",
-        "Jamshedpur",
-        "Dhanbad",
-        "Bokaro"
+        "Git",
+        "SVN",
+        "Mercurial",
+        "MySQL"
       ],
-      "correctAnswer": "Ranchi"
+      "correctAnswer": "MySQL"
     },
     {
       "id": 14,
-      "question": "What is the primary mode of transportation in rural Jharkhand?",
+      "question": "What does REST stand for in web development?",
       "options": [
-        "Air",
-        "Rail",
-        "Road",
-        "Water"
+        "Representational State Transfer",
+        "Remote State Transfer",
+        "Resourceful State Transfer",
+        "Representational Server Transfer"
       ],
-      "correctAnswer": "Road"
+      "correctAnswer": "Representational State Transfer"
     },
     {
       "id": 15,
-      "question": "Which of these is a significant agricultural product of Jharkhand?",
+      "question": "What is an API?",
       "options": [
-        "Rice",
-        "Wheat",
-        "Maize",
-        "Pulses"
+        "Application Programming Interface",
+        "Advanced Programming Interface",
+        "Application Process Interface",
+        "Advanced Process Interface"
       ],
-      "correctAnswer": "Rice"
+      "correctAnswer": "Application Programming Interface"
     },
     {
       "id": 16,
-      "question": "What type of farming is predominantly practiced in Jharkhand?",
-      "options": [
-        "Intensive Farming",
-        "Extensive Farming",
-        "Subsistence Farming",
-        "Commercial Farming"
+      "question": "What is a common use case for a queue data structure?",
+      "options":[
+        "Managing tasks in a printer",
+        "Storing a directory of files",
+        "Tracking employee records",
+        "Representing a hierarchical structure"
       ],
-      "correctAnswer": "Subsistence Farming"
+      "correctAnswer": "Managing tasks in a printer"
     },
     {
       "id": 17,
-      "question": "Explain the concept of 'Chota Nagpur Plateau' and its significance in Jharkhand's geography.",
+      "question": "What is a linked list?",
       "options": [
-        "A small plateau with insignificant geographical features.",
-        "A large plateau comprising a significant part of Jharkhand, rich in minerals and forests.",
-        "A low-lying plain primarily used for agriculture.",
-        "A coastal region bordering the Bay of Bengal."
+        "A linear data structure where each element points to the next",
+        "A non-linear data structure used for searching",
+        "A type of tree structure",
+        "A sorted array"
       ],
-      "correctAnswer": "A large plateau comprising a significant part of Jharkhand, rich in minerals and forests."
+      "correctAnswer": "A linear data structure where each element points to the next"
     },
     {
       "id": 18,
-      "question": "How does the topography of Jharkhand impact its drainage system?",
+      "question": "What is Big O notation used for?",
       "options": [
-        "No significant impact.",
-        "The hilly terrain leads to numerous short, swift rivers.",
-        "The flat plains lead to the formation of large, meandering rivers.",
-        "The coastal location results in a vast network of estuaries."
+        "Measuring the efficiency of algorithms",
+        "Representing data structures in memory",
+        "Debugging code",
+        "Designing user interfaces"
       ],
-      "correctAnswer": "The hilly terrain leads to numerous short, swift rivers."
+      "correctAnswer": "Measuring the efficiency of algorithms"
     },
     {
       "id": 19,
-      "question": "Discuss the environmental challenges faced by Jharkhand due to its mineral wealth.",
+      "question": "What does O(n) represent in Big O notation?",
       "options": [
-        "No significant environmental challenges.",
-        "Deforestation, water pollution, and soil degradation.",
-        "Increased rainfall and flooding.",
-        "Coastal erosion and rising sea levels."
+        "Constant time complexity",
+        "Linear time complexity",
+        "Logarithmic time complexity",
+        "Quadratic time complexity"
       ],
-      "correctAnswer": "Deforestation, water pollution, and soil degradation."
+      "correctAnswer": "Linear time complexity"
     },
     {
       "id": 20,
-      "question": "What is the role of the Damodar Valley Corporation (DVC) in Jharkhand?",
+      "question": "What is a hash table?",
       "options": [
-        "Tourism development.",
-        "Irrigation and power generation.",
-        "Mineral extraction.",
-        "Forestry and wildlife conservation."
+        "A data structure that uses hashing for fast data retrieval",
+        "A type of linked list",
+        "A sorted array",
+        "A tree structure"
       ],
-      "correctAnswer": "Irrigation and power generation."
+      "correctAnswer": "A data structure that uses hashing for fast data retrieval"
     },
     {
       "id": 21,
-      "question": "Analyze the impact of urbanization on the environment of Jharkhand.",
+      "question": "What is recursion in programming?",
       "options": [
-        "No significant impact.",
-        "Increased pollution, strain on resources, and habitat loss.",
-        "Improved infrastructure and sanitation.",
-        "Reduced population density and improved living conditions."
+        "A function calling itself",
+        "A loop that iterates through an array",
+        "A method of sorting data",
+        "A way to handle exceptions"
       ],
-      "correctAnswer": "Increased pollution, strain on resources, and habitat loss."
+      "correctAnswer": "A function calling itself"
     },
     {
       "id": 22,
-      "question": "What are the major challenges to sustainable development in Jharkhand?",
+      "question": "What is a deadlock in concurrent programming?",
       "options": [
-        "No major challenges.",
-        "Poverty, illiteracy, and environmental degradation.",
-        "Abundant resources and a growing economy.",
-        "Advanced infrastructure and technology."
+        "A situation where two or more processes are blocked indefinitely",
+        "A race condition where data is corrupted",
+        "A type of exception",
+        "A method for synchronizing processes"
       ],
-      "correctAnswer": "Poverty, illiteracy, and environmental degradation."
+      "correctAnswer": "A situation where two or more processes are blocked indefinitely"
     },
     {
       "id": 23,
-      "question": "How does the climate of Jharkhand affect its agricultural practices?",
+      "question": "What is the purpose of a software design pattern?",
       "options": [
-        "No significant impact.",
-        "The monsoonal climate necessitates rain-fed agriculture and crop diversification.",
-        "The arid climate necessitates large-scale irrigation.",
-        "The temperate climate allows for year-round cultivation."
+        "To provide reusable solutions to common programming problems",
+        "To write faster code",
+        "To create more complex software",
+        "To debug code more easily"
       ],
-      "correctAnswer": "The monsoonal climate necessitates rain-fed agriculture and crop diversification."
+      "correctAnswer": "To provide reusable solutions to common programming problems"
     },
     {
       "id": 24,
-      "question": "What are the major factors contributing to deforestation in Jharkhand?",
+      "question": "Which design pattern promotes loose coupling between objects?",
       "options": [
-        "No deforestation occurring.",
-        "Mining, agriculture, and urbanization.",
-        "Increased rainfall and flooding.",
-        "Government initiatives for reforestation."
+        "Singleton",
+        "Observer",
+        "Factory",
+        "Adapter"
       ],
-      "correctAnswer": "Mining, agriculture, and urbanization."
+      "correctAnswer": "Observer"
     },
     {
       "id": 25,
-      "question": "How does the geographical location of Jharkhand influence its trade and commerce?",
+      "question": "What is the purpose of a software testing framework?",
       "options": [
-        "No significant influence.",
-        "Its landlocked position presents challenges but also fosters regional trade.",
-        "Its coastal location facilitates extensive maritime trade.",
-        "Its location in the Himalayas promotes high-altitude trade."
+        "To automate testing processes",
+        "To write faster code",
+        "To design user interfaces",
+        "To manage source code"
       ],
-      "correctAnswer": "Its landlocked position presents challenges but also fosters regional trade."
+      "correctAnswer": "To automate testing processes"
     },
     {
       "id": 26,
-      "question": "Describe the impact of the monsoon season on the rivers of Jharkhand.",
+      "question": "What is unit testing?",
       "options": [
-        "No significant impact.",
-        "Increased water flow, sometimes leading to flooding.",
-        "Reduced water flow, leading to droughts.",
-        "No change in river flow."
+        "Testing individual components of software",
+        "Testing the entire system as a whole",
+        "Testing user interfaces",
+        "Testing database connections"
       ],
-      "correctAnswer": "Increased water flow, sometimes leading to flooding."
+      "correctAnswer": "Testing individual components of software"
     },
     {
       "id": 27,
-      "question": "What is the significance of the Hazaribagh plateau within the larger context of the Chotanagpur Plateau?",
+      "question": "What is integration testing?",
       "options": [
-        "It is an insignificant part of the larger plateau.",
-        "It is a distinct sub-region known for its unique geological formations and wildlife.",
-        "It is a low-lying area primarily used for agriculture.",
-        "It is a coastal region with limited ecological importance."
+        "Testing the interaction between different components of software",
+        "Testing individual components in isolation",
+        "Testing the entire system with real users",
+        "Testing the performance of the software"
       ],
-      "correctAnswer": "It is a distinct sub-region known for its unique geological formations and wildlife."
+      "correctAnswer": "Testing the interaction between different components of software"
     },
     {
       "id": 28,
-      "question": "Discuss the socio-economic implications of the unequal distribution of resources in Jharkhand.",
+      "question": "What is system testing?",
       "options": [
-        "No socio-economic implications.",
-        "Regional disparities, poverty, and social unrest.",
-        "Balanced development and equitable distribution of wealth.",
-        "No significant impact on the overall economy."
+        "Testing the entire system as a whole",
+        "Testing individual components in isolation",
+        "Testing the performance of the software",
+        "Testing the user interface"
       ],
-      "correctAnswer": "Regional disparities, poverty, and social unrest."
+      "correctAnswer": "Testing the entire system as a whole"
     },
     {
       "id": 29,
-      "question": "How has the development of infrastructure in Jharkhand impacted its environment?",
+      "question": "What is the purpose of a load balancer?",
       "options": [
-        "No significant impact.",
-        "Both positive and negative impacts, depending on the type of infrastructure and its implementation.",
-        "Only positive impacts, such as improved connectivity and economic growth.",
-        "Only negative impacts, such as habitat loss and increased pollution."
+        "Distributing network traffic across multiple servers",
+        "Protecting servers from malicious attacks",
+        "Caching data for faster access",
+        "Managing database connections"
       ],
-      "correctAnswer": "Both positive and negative impacts, depending on the type of infrastructure and its implementation."
+      "correctAnswer": "Distributing network traffic across multiple servers"
     },
     {
       "id": 30,
-      "question": "What are the potential strategies for sustainable resource management in Jharkhand, considering its rich mineral reserves and diverse ecosystems?",
+      "question": "What is a microservice architecture?",
       "options": [
-        "No need for sustainable resource management.",
-        "Implementing stricter environmental regulations, promoting eco-tourism, and investing in renewable energy.",
-        "Unrestricted mining and industrialization to maximize economic benefits.",
-        "Ignoring environmental concerns to focus on rapid economic growth."
+        "An architectural style that structures an application as a collection of small, autonomous services",
+        "A monolithic application",
+        "A client-server architecture",
+        "A peer-to-peer architecture"
       ],
-      "correctAnswer": "Implementing stricter environmental regulations, promoting eco-tourism, and investing in renewable energy."
+      "correctAnswer": "An architectural style that structures an application as a collection of small, autonomous services"
     }
   ]
 }

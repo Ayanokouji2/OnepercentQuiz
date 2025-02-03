@@ -1,11 +1,14 @@
 import {Router} from 'express'
-import { getUserProfile } from '../controllers/user.controller.js';
+import { getUserProfile, getQuiz, createUser } from '../controllers/user.controller.js';
 
 const router = Router();
 
 router
-    .route("/profile")
-    .get(getUserProfile)
+    .route("/getQuiz")
+    .get(getQuiz)
 
+router
+    .route("/createUser")
+    .post(createUser)
 
 export default router;
