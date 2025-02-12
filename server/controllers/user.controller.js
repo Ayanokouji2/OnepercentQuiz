@@ -15,16 +15,17 @@ export const getQuiz = asyncErrorHandler(async (req, res) => {
 
     const prompt = getPrompt(topic)
     
-    const {response} = await geminiModel.generateContent(prompt)
+    // const {response} = await geminiModel.generateContent(prompt)
 
     // const responseData = response.text()
-    const data = response.text()
+    // const data = response.text()
 
-    const formattedData = data.slice(7,data.length - 4)
+    // const formattedData = data.slice(7,data.length - 4)
     // fs.writeFileSync('./response/response.json',formattedData,'utf-8')
 
     res.status(200).json({
-        questions: JSON.parse(formattedData),
+        // questions: JSON.parse(formattedData),
+        questions: data,
         success: true,
         message:" Sab thik hai"
     })

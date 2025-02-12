@@ -23,15 +23,15 @@ const Result = () => {
                         Your Performance
                     </h2>
                     <p className='text-base text-gray-700'>
-                        {correctAnswerCount /30 >= 0.8
+                        {score /30 >= 0.8
                             ? 'Excellent! You did a great job!'
-                            : correctAnswerCount / 30 >= 0.5
+                            : score / 30 >= 0.5
                             ? 'Good effort! Keep practicing to improve!'
                             : 'Keep trying! Review the questions and come back stronger!'}
                     </p>
                 </div>
                 <button
-                    onClick={() => window.location.reload()}
+                    onClick={() => window.location ="/quiz"}
                     className='mt-8 px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg shadow-md hover:bg-indigo-600 transition-all'>
                     Try Again
                 </button>

@@ -2,35 +2,36 @@ import { useState, useEffect, useCallback } from 'react';
 // import Data from '../constant/data.json';
 import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
-import {setQuestions} from '../store/features/quizSlice'
+import { manageScore, setQuestions } from '../store/features/quizSlice';
+import { useNavigate } from 'react-router-dom';
 
 const Quiz = () => {
 	const [loading, setLoading] = useState(true);
 	const [index, setIndex] = useState(0);
-	const [correctAnswerCount, setCorrectAnsCount] = useState(0)
+	const [correctAnswerCount, setCorrectAnsCount] = useState(0);
 
 	const topic = useSelector((state) => state.quiz.topic);
-	const questions = useSelector((state) => state.quiz.questions)
-	const dispatch = useDispatch()
+	const questions = useSelector((state) => state.quiz.questions);
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		(async () => {
-			setLoading(true)
-			const {data :responseData} = await axios.get(`/api/user/getQuiz?topic=${topic}`);
-			console.log(responseData?.questions?.questions, "fetched from db")
+			setLoading(true);
+			const { data: responseData } = await axios.get(
+				`/api/user/getQuiz?topic=${topic}`
+			);
+			// console.log(responseData?.questions?.questions, 'fetched from db');
 			dispatch(setQuestions(responseData?.questions?.questions));
-			setLoading(false)
+			setLoading(false);
 		})();
 	}, [topic, dispatch, questions.length]);
 
-	useEffect(()=>{
-		console.log(questions, " this is the question from redux")
-	},[questions.length])
-
 	const handleSelect = (ans, id) => {
-		console.log(questions?.find((item) => item.id === id));
+		// console.log(questions?.find((item) => item.id === id));
 		setCorrectAnsCount((prev) => {
-			return questions?.find((item) => item.id === id).correctAnswer === ans
+			return questions?.find((item) => item.id === id).correctAnswer ===
+				ans
 				? prev + 1
 				: prev;
 		});
@@ -38,15 +39,27 @@ const Quiz = () => {
 		setIndex((prev) => prev + 1);
 	};
 
-	if(loading){
+	useEffect(() => {
+		if (index === 30) {
+			setLoading(true);
+			dispatch(manageScore(correctAnswerCount));
+			
+			setTimeout(() => navigate('/result'), 1000);
+			 // Delay navigation to ensure state updates
+		}
+	}, [index, dispatch, correctAnswerCount, navigate]);
+
+	if (loading) {
 		return (
-            <div className="h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 to-purple-200">
-                <div className="flex flex-col items-center">
-                    <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-purple-500"></div>
-                    <p className="mt-4 text-lg font-medium text-gray-700">Loading Quiz...</p>
-                </div>
-            </div>
-        );
+			<div className='h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 to-purple-200'>
+				<div className='flex flex-col items-center'>
+					<div className='animate-spin rounded-full h-16 w-16 border-b-4 border-purple-500'></div>
+					<p className='mt-4 text-lg font-medium text-gray-700'>
+						Loading Quiz...
+					</p>
+				</div>
+			</div>
+		);
 	}
 	return (
 		<div className='min-h-screen bg-gradient-to-br from-indigo-100 to-purple-200 flex sm:items-center justify-center sm:p-5 '>
@@ -58,10 +71,12 @@ const Quiz = () => {
 				</h1>
 				<div className='bg-white shadow-md p-5 sm:p-6 rounded-xl'>
 					<h2 className='text-xl sm:text-2xl font-semibold text-gray-700 text-center mb-4 sm:mb-6'>
-						{ !loading && questions[index]?.question}
+						{!loading && questions[index]?.question}
 					</h2>
 					<div className='flex flex-col gap-3 sm:gap-4'>
-						{(questions.length > 0 && questions[index])?.options.map((option, currentIndex) => (
+						{(
+							questions.length > 0 && questions[index]
+						)?.options.map((option, currentIndex) => (
 							<button
 								onClick={() =>
 									handleSelect(option, questions[index]?.id)

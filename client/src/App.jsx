@@ -11,14 +11,13 @@ function App() {
 			<Navbar />
 			<Routes>
 				<Route
-					path='/signup'
+					path='/'
 					element={<Singup />}
 				/>
 				<Route
 					path='/quiz'
 					element={<Quiz />}
 				/>
-
 				<Route 
 					path='/getTopic'
 					element={<TopicSelection />} 

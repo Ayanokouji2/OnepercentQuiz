@@ -12,13 +12,12 @@ const quizSlice = createSlice({
     initialState,
     reducers:{
         manageScore :(state, action)=>{
-            state.score += action.payload;
+            state.score = action.payload;
         },
         submitedOption : (state, action) =>{
             state.selectedOption.push(action.payload)
         },
         setQuestions : (state, action) =>{
-            console.log(action, action.payload)
             state.questions = [...(action.payload)]
         },
         setTopicForQuiz : (state, action) => {
