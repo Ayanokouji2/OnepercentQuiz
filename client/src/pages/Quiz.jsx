@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
 import { manageScore, setQuestions } from '../store/features/quizSlice';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../components/Loading'
 
 const Quiz = () => {
 	const [loading, setLoading] = useState(true);
@@ -50,16 +51,7 @@ const Quiz = () => {
 	}, [index, dispatch, correctAnswerCount, navigate]);
 
 	if (loading) {
-		return (
-			<div className='h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 to-purple-200'>
-				<div className='flex flex-col items-center'>
-					<div className='animate-spin rounded-full h-16 w-16 border-b-4 border-purple-500'></div>
-					<p className='mt-4 text-lg font-medium text-gray-700'>
-						Loading Quiz...
-					</p>
-				</div>
-			</div>
-		);
+		return <Loading />
 	}
 	return (
 		<div className='min-h-screen bg-gradient-to-br from-indigo-100 to-purple-200 flex sm:items-center justify-center sm:p-5 '>
