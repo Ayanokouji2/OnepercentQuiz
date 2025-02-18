@@ -22,6 +22,8 @@ const Quiz = () => {
 			const { data: responseData } = await axios.get(
 				`/api/user/getQuiz?topic=${topic}`
 			);
+
+			console.log(responseData, "this is from the client ")
 			// console.log(responseData?.questions?.questions, 'fetched from db');
 			dispatch(setQuestions(responseData?.questions?.questions));
 			setLoading(false);

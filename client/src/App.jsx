@@ -7,6 +7,7 @@ import Result from "./pages/Result";
 import Login from "./pages/Login";
 import AuthProvider from "./context/auth/AuthProvider";
 import ProtectedRoute from "./routes/ProtectedRoute";
+import Home from "./pages/Home";
 
 function App() {
 	return (
@@ -20,13 +21,12 @@ function App() {
 
 				{/* 🔹 Protected Routes (Only for logged-in users) */}
 				<Route element={<ProtectedRoute authRequired={true} />}>
+					<Route path="/" element={<Home />}/>
 					<Route path="/getTopic" element={<TopicSelection />} />
 					<Route path="/quiz" element={<Quiz />} />
 					<Route path="/result" element={<Result />} />
 				</Route>
 
-				{/* 🔹 Default Route */}
-				{/* <Route path="*" element={<Navigate to="/login" />} /> */}
 			</Routes>
 		</AuthProvider>
 	);

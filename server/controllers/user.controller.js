@@ -2,7 +2,7 @@ import asyncErrorHandler from "../utils/asyncErrorHandler.js";
 import geminiModel from '../libs/gemini.js'
 import { getPrompt } from "../libs/generatingPrompt.js";
 import fs from 'fs'
-import data from '../response/response.json' assert { type : "json"}
+// import data from '../response/response.json' assert { type : "json"}
 import UserModel from "../models/userModel.js";
 import JWT from 'jsonwebtoken';
 
@@ -16,17 +16,17 @@ export const getQuiz = asyncErrorHandler(async (req, res) => {
 
     const prompt = getPrompt(topic)
     
-    // const {response} = await geminiModel.generateContent(prompt)
+    const {response} = await geminiModel.generateContent(prompt)
 
     // const responseData = response.text()
-    // const data = response.text()
+    const data = response.text()
 
-    // const formattedData = data.slice(7,data.length - 4)
+    const formattedData = data.slice(7,data.length - 4)
     // fs.writeFileSync('./response/response.json',formattedData,'utf-8')
 
     res.status(200).json({
-        // questions: JSON.parse(formattedData),
-        questions: data,
+        questions: JSON.parse(formattedData),
+        // questions: formattedData,
         success: true,
         message:" Sab thik hai"
     })

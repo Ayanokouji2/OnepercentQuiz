@@ -1,19 +1,19 @@
     import React from "react";
     import useAuth from "../context/auth/index";
-    import { Navigate, Outlet, useLocation } from "react-router-dom";
+    import { Navigate, Outlet } from "react-router-dom";
 
     const ProtectedRoute = ({ authRequired }) => {
         const { isUser } = useAuth();
-        const location = useLocation();
 
-        if(authRequired && isUser){
-            return <Outlet />;
+        if(!isUser && authRequired){
+            return <Navigate to="/login" />
         }
 
-        if(isUser !== null && (location.pathname == "/signup" || location.pathname == "/login") )
+        if(!authRequired && isUser){
             return <Navigate to="/getTopic" />
+        }
 
-        return <Navigate to="/login" />
+        return <Outlet />
     };
 
     export default ProtectedRoute;
